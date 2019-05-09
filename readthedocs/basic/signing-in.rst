@@ -9,7 +9,7 @@ Before working with Telegram's API, you need to get your own API ID and hash:
 1. `Login to your Telegram account <https://my.telegram.org/>`_ with the
    phone number of the developer account to use.
 
-2. Click under API Development tools.
+2. Click API Development tools.
 
 3. A *Create new application* window will appear. Fill in your application
    details. There is no need to enter any *URL*, and only the first two
@@ -113,13 +113,13 @@ you will need to  `install PySocks`__ and then change:
 
     TelegramClient('anon', api_id, api_hash)
 
-with
+to
 
 .. code-block:: python
 
     TelegramClient('anon', api_id, api_hash, proxy=(socks.SOCKS5, '127.0.0.1', 4444))
 
-(of course, replacing the IP and port with the IP and port of the proxy).
+(of course, replace the IP and port with the IP and port of the proxy).
 
 The ``proxy=`` argument should be a tuple, a list or a dict,
 consisting of parameters described `in PySocks usage`__.
